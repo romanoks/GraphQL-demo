@@ -1,0 +1,15 @@
+schema {
+    query: [Book]
+}
+
+type Book {
+    id: ID!
+    name: String!
+    author: [Author]!
+}
+
+type Author {
+    id: ID!
+    firstName: String!
+    lastName: String!
+}
